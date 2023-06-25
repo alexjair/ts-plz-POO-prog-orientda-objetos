@@ -1,7 +1,7 @@
 import { Product } from './../model/product.model';
 import { Category } from './../model/category.model';
 
-export interface CreateProductDto extends Omit<Product, 'id' | 'createdAt' | 'updatedAt' | 'category'>{
+export interface CreateProductDto extends Omit<Product, 'id' | 'creationAt' | 'updatedAt' | 'category'>{
   categoryId: Category['id'];
 }
 
